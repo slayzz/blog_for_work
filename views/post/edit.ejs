@@ -1,0 +1,14 @@
+<h2 class="text-center">Редактирование</h2>
+<div class="container text-center">
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+    <div class="row">
+      <form method="post" action="/post/update/<%= posts.id %>">
+        <label for="title">Заглавие</label><input name = "title" type="text" class="form-control" value="<%= posts.title %>">
+        <label for="content">Описание</label><input name = "description" type="text" class="form-control" value="<%= posts.description %>">
+        <label for="content">Содержание</label><input name="content" id="edit_desc" class="form-control input-lg " height="300" value="<%= posts.content %>">
+        <input type="submit" name="submit" class="btn btn-success" value="Редактировать">
+      </form>
+    </div>
+  </div>
+</div>
